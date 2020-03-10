@@ -14,10 +14,10 @@ import { Header, Footer }  from "components";
 const Body = styled.div`
   margin: 0 auto;
   maxWidth: 960;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 0 1.0875rem;
 `;
 
-export const Layout = ({ children }) => {
+export const Layout = ({image, children }) => {
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -31,9 +31,12 @@ export const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        image={image}
+      />
       <Body>
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer></Footer>
       </Body>
     </React.Fragment>

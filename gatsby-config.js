@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Maxwell Novak | Real Cool stuff here",
+    title: "Maxwell Novak",
     description: "Personal Site, which I'm using to show off dumb stuff",
     author: "Maxwell Novak",
   },
@@ -19,7 +19,7 @@ module.exports = {
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+        icon: "src/images/pie-vector.png",
       },
     },
     {

@@ -4,8 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.header`
-  background-color: rebeccapurple;
-  margin-bottom: 1.45rem;
+  background-color: #60BBBF;
   margin: 0 auto;
   maxWidth: 960;
   padding: 1.45rem 1.0875rem;
