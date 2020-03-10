@@ -4,6 +4,7 @@ module.exports = {
     description: "Personal Site, which I'm using to show off dumb stuff",
     author: "Maxwell Novak",
   },
+  pathPrefix: "/personal-site",
   plugins: [
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",

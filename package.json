@@ -26,6 +26,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.19.0",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -35,6 +36,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "yarn eslint --cache .",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
