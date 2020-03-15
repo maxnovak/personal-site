@@ -1,14 +1,16 @@
 import React from "react";
 import {
-  Welcome,
   Layout,
+  Projects,
   SEO,
+  Welcome,
 } from "components";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Maxwell Novak" />
     <Welcome />
+    <Projects />
   </Layout>
 );
 

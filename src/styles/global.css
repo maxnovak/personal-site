@@ -11,3 +11,7 @@ p {
   font-family: 'Merriweather', serif;
   color: #FFFFFF;
 }
+
+a {
+  text-decoration: none;
+}

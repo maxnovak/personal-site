@@ -26,7 +26,6 @@ const Links = styled.div`
 
 const Link = styled.a`
   color: #FFFFFF;
-  text-decoration: none;
   margin: 0 10px;
 `;
 
