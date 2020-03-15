@@ -1,4 +1,5 @@
 export * from "./Footer";
+export * from "./About";
 export * from "./Header";
 export * from "./Image";
 export * from "./Layout";

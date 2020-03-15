@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  About,
   Layout,
   Projects,
   SEO,
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Welcome />
     <Projects />
     <Streaming />
+    <About />
   </Layout>
 );
 
