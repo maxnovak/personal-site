@@ -8,6 +8,7 @@ import twitch from "images/twitch.svg";
 const Container = styled.footer`
   display: flex;
   justify-content: space-between;
+  margin-top: 10rem;
 `;
 
 const Image = styled.a`
