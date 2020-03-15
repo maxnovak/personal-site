@@ -20,7 +20,9 @@ const Subtext = styled.p`
 `;
 
 export const Welcome = () => (
-  <Container>
+  <Container
+    id="welcome"
+  >
     <BigText>Howdy!</BigText>
     <Subtext>I like working on odd projects, here is a small sample of them.</Subtext>
   </Container>

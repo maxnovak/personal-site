@@ -12,6 +12,12 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -75,
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "gatsby-starter-default",

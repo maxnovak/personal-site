@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Container = styled.nav`
   display: flex;
@@ -24,7 +25,7 @@ const Links = styled.div`
   color: #FFFFFF;
 `;
 
-const Link = styled.a`
+const Link = styled(AnchorLink)`
   color: #FFFFFF;
   margin: 0 10px;
 `;
@@ -33,32 +34,32 @@ export const Header = ({ siteTitle }) => (
   <Container>
     <H1>
       <Link
-        href="/"
+        to="/"
       >
         {siteTitle}
       </Link>
     </H1>
     <Links>
       <Link
-        href="/"
+        to="/#welcome"
       >
         Home
       </Link>
       |
       <Link
-        href="/#projects"
+        to="/#projects"
       >
         Projects
       </Link>
       |
       <Link
-        href="/#streaming"
+        to="/#streaming"
       >
         Streaming
       </Link>
       |
       <Link
-        href="/#about"
+        to="/#about"
       >
         About
       </Link>
