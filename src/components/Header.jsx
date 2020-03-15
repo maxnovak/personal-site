@@ -2,13 +2,17 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.header`
+const Container = styled.nav`
   display: flex;
-  justify-content: space-between;
-  background-color: #60BBBF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   margin: 0 auto;
-  maxWidth: 960;
   padding: 1.45rem 1.0875rem;
+  justify-content: space-between;
+  background-color: #35b8f4;
 `;
 
 const H1 = styled.h1`

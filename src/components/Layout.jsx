@@ -13,8 +13,6 @@ import { Header, Footer }  from "components";
 
 const Body = styled.div`
   margin: 0 auto;
-  maxWidth: 960;
-  padding: 0 1.0875rem;
 `;
 
 export const Layout = ({image, children }) => {
@@ -36,7 +34,7 @@ export const Layout = ({image, children }) => {
         image={image}
       />
       <Body>
-        <div>{children}</div>
+        {children}
         <Footer></Footer>
       </Body>
     </React.Fragment>
