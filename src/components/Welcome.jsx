@@ -9,18 +9,14 @@ const Container = styled.div`
 `;
 
 const BigText = styled.p`
-  margin: 0;
   padding-top: 13rem;
   font-weight: 800;
   font-size: 3.5rem;
-  color: #FFFFFF;
 `;
 
 const Subtext = styled.p`
-  margin: 0;
   padding-top: 3rem;
   font-size: 1.25rem;
-  color: #FFFFFF;
 `;
 
 export const Welcome = () => (

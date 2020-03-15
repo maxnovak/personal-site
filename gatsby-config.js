@@ -30,5 +30,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Merriweather"],
+        },
+      },
+    },
   ],
 };

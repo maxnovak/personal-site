@@ -15,6 +15,7 @@ const Image = styled.a`
 `;
 
 const Text = styled.p`
+  color: #000000;
   margin: 0 auto 0.3rem auto;
 `;
 
