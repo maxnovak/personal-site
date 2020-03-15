@@ -3,6 +3,7 @@ import {
   Layout,
   Projects,
   SEO,
+  Streaming,
   Welcome,
 } from "components";
 
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <SEO title="Maxwell Novak" />
     <Welcome />
     <Projects />
+    <Streaming />
   </Layout>
 );
 
