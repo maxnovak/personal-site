@@ -27,7 +27,6 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.19.0",
-    "gatsby-plugin-eslint": "^2.0.8",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },

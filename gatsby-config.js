@@ -6,7 +6,6 @@ module.exports = {
   },
   pathPrefix: "/personal-site",
   plugins: [
-    "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-styled-components",
