@@ -8,15 +8,17 @@ const Container = styled.div`
 `;
 
 const Card = styled.a`
+  color: black;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 25px;
+  width: 30%;
+  max-width: 25rem;
+  text-align: center;
 `;
 
 const ColorCard = styled(Card)`
   color: white;
-  max-width: 25rem;
-  text-align: center;
   background-image: linear-gradient(${(props) => (props.firstColor)}, ${(props) => (props.secondColor)});
 `;
 
@@ -44,7 +46,12 @@ export const Projects = () => {
     <Card
       href="https://github.com/maxnovak/git-art"
     >
-      git-art
+      Git Art <br/> <br/>
+      This is an Golang Application that allows you to input designs
+      or a json and a year and be given a repository that can create
+      art in your github history.  I recommend using a year where you
+      have no existing history, because github seems to be quicker to
+      pick up those changes.
     </Card>
     <ColorCard
       firstColor={firstColor}
@@ -65,7 +72,9 @@ export const Projects = () => {
     <Card
       href="https://github.com/maxnovak/personal-site"
     >
-      code for this site
+      Code for this site <br/> <br/>
+      This is just a link to the code for this site.  It is all written
+      using React & styled components, and uses GatsbyJS as a site generator.
     </Card>
   </Container>
 };
