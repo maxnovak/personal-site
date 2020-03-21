@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{Dtc0:function(e,t,n){"use strict";n.r(t);var l=n("q1tI"),a=n.n(l),c=n("Kvkj");t.default=function(){return a.a.createElement(c.d,null,a.a.createElement(c.f,{title:"Maxwell Novak"}),a.a.createElement(c.h,null),a.a.createElement(c.e,null),a.a.createElement(c.g,null),a.a.createElement(c.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-jsx-eb09657ec10cd284833f.js.map
