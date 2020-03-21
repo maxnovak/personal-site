@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +24,10 @@ const ColorCard = styled(Card)`
   background-image: linear-gradient(${(props) => (props.firstColor)}, ${(props) => (props.secondColor)});
 `;
 
+const GitArtImg = styled(Img)`
+  margin-top: 2rem;
+`;
+
 export const Projects = () => {
 
   const [firstColor, setFirstColor] = useState('');
@@ -40,6 +46,18 @@ export const Projects = () => {
     fetchData();
   },[]);
 
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "git-art.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return <Container
     id="projects"
   >
@@ -52,6 +70,7 @@ export const Projects = () => {
       art in your github history.  I recommend using a year where you
       have no existing history, because github seems to be quicker to
       pick up those changes.
+      <GitArtImg fluid={data.placeholderImage.childImageSharp.fluid} />
     </Card>
     <ColorCard
       firstColor={firstColor}
