@@ -24,7 +24,7 @@ const ColorCard = styled(Card)`
   background-image: linear-gradient(${(props) => (props.firstColor)}, ${(props) => (props.secondColor)});
 `;
 
-const GitArtImg = styled(Img)`
+const ImgWrapper = styled(Img)`
   margin-top: 2rem;
 `;
 
@@ -48,7 +48,14 @@ export const Projects = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "git-art.png" }) {
+      gitArtImage: file(relativePath: { eq: "git-art.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      WelcomePageImage: file(relativePath: { eq: "welcome-page.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -70,7 +77,7 @@ export const Projects = () => {
       art in your github history.  I recommend using a year where you
       have no existing history, because github seems to be quicker to
       pick up those changes.
-      <GitArtImg fluid={data.placeholderImage.childImageSharp.fluid} />
+      <ImgWrapper fluid={data.gitArtImage.childImageSharp.fluid} />
     </Card>
     <ColorCard
       firstColor={firstColor}
@@ -94,6 +101,7 @@ export const Projects = () => {
       Code for this site <br/> <br/>
       This is just a link to the code for this site.  It is all written
       using React & styled components, and uses GatsbyJS as a site generator.
+      <ImgWrapper fluid={data.WelcomePageImage.childImageSharp.fluid} />
     </Card>
   </Container>
 };
