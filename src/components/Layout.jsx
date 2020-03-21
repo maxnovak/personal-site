@@ -13,6 +13,7 @@ import { Header, Footer }  from "components";
 
 const Body = styled.div`
   margin: 0 auto;
+  padding-top: 4.65625rem;
 `;
 
 export const Layout = ({image, children }) => {
