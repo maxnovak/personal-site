@@ -1,5 +1,6 @@
 html {
   font-family: sans-serif;
+  font-display: swap;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
 p {
   margin: 0;
   font-family: 'Merriweather', serif;
+  font-display: swap;
   color: #FFFFFF;
 }
 
