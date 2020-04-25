@@ -10,7 +10,7 @@ export const Streaming = () => {
 
     const script = document.createElement("script");
     script.src = "https://embed.twitch.tv/embed/v1.js";
-    script.async = true;
+    script.defer = true;
     script.addEventListener("load", () => {
        
       var embed= new window.Twitch.Embed("streaming",
